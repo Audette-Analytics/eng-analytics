@@ -1,0 +1,2220 @@
+{
+  "base_building_state": {
+    "area_to_perimeter_ratio": 0.9602,
+    "available_roof_area_ratio": 0.15,
+    "building_archetype": "multi_unit_residential",
+    "building_height": 3,
+    "building_uid": "00386486-8a1e-488c-a628-e25036e1f90e",
+    "envelope_area": 130.73,
+    "envelope_infiltration_rate": 0.000258,
+    "equipment_list": {
+      "hvac_system": {
+        "air_handling": {
+          "type": "AirHandlingUnit",
+          "data": {
+            "cooler": {
+              "type": "HydronicCoolingCoil",
+              "data": {
+                "coefficient_of_performance": null,
+                "fuel": null,
+                "load_ratio": 1
+              }
+            },
+            "heat_recovery_rate": 0,
+            "heater": {
+              "type": "HydronicHeatingCoil",
+              "data": {
+                "coefficient_of_performance": null,
+                "fuel": null,
+                "load_ratio": 1
+              }
+            },
+            "installation_year": 2020,
+            "life_span": 30
+          }
+        },
+        "central_hydronic": {
+          "cooler": {
+            "type": "AirCooledChiller",
+            "data": {
+              "installation_year": 2015,
+              "life_span": 25,
+              "size": 0.892952380952381,
+              "coefficient_of_performance": 2.81,
+              "fuel": "electricity",
+              "load_ratio": 1
+            }
+          },
+          "heater": {
+            "type": "GasBoiler",
+            "data": {
+              "installation_year": 2020,
+              "life_span": 30,
+              "size": 2.3440000000000003,
+              "coefficient_of_performance": 0.8,
+              "fuel": "natural_gas",
+              "load_ratio": 1
+            }
+          }
+        },
+        "coverage_ratio": 1,
+        "domestic_hot_water": {
+          "heater": {
+            "type": "DHWGasHeater",
+            "data": {
+              "installation_year": 2010,
+              "life_span": 20,
+              "size": 0.13394285714285714,
+              "coefficient_of_performance": 0.8,
+              "fuel": "natural_gas",
+              "load_ratio": 1
+            }
+          }
+        },
+        "name": "central"
+      },
+      "other_equipment": {
+        "process": [
+          {
+            "type": "ClothesDryer",
+            "data": {
+              "coefficient_of_performance": 0.8,
+              "end_use": "process",
+              "energy_density": 2.5,
+              "fuel": "natural_gas",
+              "installation_year": 2010,
+              "life_span": 20
+            }
+          }
+        ]
+      }
+    },
+    "floor_height": 3.05,
+    "floors_above_grade": 1,
+    "footprint_area": 46.88,
+    "footprint_perimeter": 27.95,
+    "gross_floor_area": 46.88,
+    "led_installed_ratio": 0.25,
+    "lighting_multiplier": 1,
+    "location": {
+      "climate_zone": "5C",
+      "country": "Canada",
+      "country_uid": "5c8002fd-6b28-414c-8a95-b3d17b1e7a9f",
+      "latitude": 49.33692204910216,
+      "longitude": -123.04049683148985,
+      "state_province": "BC",
+      "state_province_uid": "167c2ace-d75d-4e9b-b73b-69b3b2ef8308"
+    },
+    "low_voltage_transformer_efficiency": "standard",
+    "occupancy_pattern": "constant",
+    "opaque_wall_area": 71.2441005668,
+    "plug_load_multiplier": 1,
+    "roof_area": 46.88,
+    "roof_installation_year": 2020,
+    "roof_r_value": 18.9396245283,
+    "ventilation_rate_multiplier": 1,
+    "wall_area": 83.85,
+    "wall_r_value": 12.1968219512,
+    "window_area": 12.6058994332,
+    "window_installation_year": 2020,
+    "window_r_value": 1.6949152542,
+    "window_solar_heat_gain_coefficient": 0.39,
+    "window_to_wall_ratio": 0.1503386933,
+    "year_built_original": 1990
+  },
+  "building_analysis": {
+    "scenario_type": "decarbonize",
+    "applied_carbon_reduction_measures": [
+      {
+        "carbon_reduction_measure_type": "Base building state",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.23820231865053512,
+            "skin_heating": 0,
+            "skin_cooling": 1.1046488103495953,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 12.00314042256568,
+            "plug_load": 17.988425834153222,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 31.63638619295694,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 17.062971951777012,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.00248422337718,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {},
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2023
+      },
+      {
+        "carbon_reduction_measure_type": "Reduce Air Infiltration with Traditional Weatherization",
+        "marginal_abatement_cost": 3121.6619560837053,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.2422315641354393,
+            "skin_heating": 0,
+            "skin_cooling": 1.1719245145162722,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 12.025619295297716,
+            "plug_load": 18.098190895199426,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 31.42389364679387,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 16.77326626484736,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.0024842239247,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 4.010951095128593,
+        "annual_mean_utility_cost_savings": 0.3194644395806076,
+        "energy_consumption_savings": {
+          "electricity": -9.542371655190209,
+          "natural_gas": 23.543053141716882
+        },
+        "incremental_cost": 140.64000000000001,
+        "like_for_like_cost": 0,
+        "measure_cost": 140.64000000000001,
+        "measure_life": 10,
+        "net_present_value": -137.72916785512726,
+        "simple_payback": 140.64000000000001,
+        "return_on_investment": 0,
+        "year_applied": 2024,
+        "internal_rate_of_return": -0.3777483651595118
+      },
+      {
+        "carbon_reduction_measure_type": "Install DCV Controls",
+        "marginal_abatement_cost": 1370.5170233176154,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.2332230447130521,
+            "skin_heating": 0,
+            "skin_cooling": 1.8550484285722284,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 12.092566301370827,
+            "plug_load": 18.76047990591646,
+            "process": 0,
+            "renewable": -0.43790931104341235
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.879154674562088,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 15.104551326818562,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.00248422998656,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 60.68383882866774,
+        "annual_mean_utility_cost_savings": 14.374547845734059,
+        "energy_consumption_savings": {
+          "electricity": -45.25992566582818,
+          "natural_gas": 338.16671902883627
+        },
+        "incremental_cost": 1050,
+        "like_for_like_cost": 0,
+        "measure_cost": 1050,
+        "measure_life": 10,
+        "net_present_value": -914.850575704468,
+        "simple_payback": 73.04577585802875,
+        "return_on_investment": 0,
+        "year_applied": 2025,
+        "internal_rate_of_return": -0.24725507910475042
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.2332230447130521,
+            "skin_heating": 0,
+            "skin_cooling": 1.8550484285722284,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 12.092566301370827,
+            "plug_load": 18.76047990591646,
+            "process": 0,
+            "renewable": -0.43790931104341235
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.879154674562088,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 15.104551326818562,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.00248422998656,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2026
+      },
+      {
+        "carbon_reduction_measure_type": "Install Low-E Window Film with Climate Appropiate SHGC",
+        "marginal_abatement_cost": 12742.209275324389,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.2436659856137339,
+            "skin_heating": 0,
+            "skin_cooling": 2.1704655754956472,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 11.746984898050858,
+            "plug_load": 18.992948559305475,
+            "process": 0,
+            "renewable": -0.45053186771436166
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.588119734901944,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 14.416170002907485,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.002484233450566,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 8.124915867601201,
+        "annual_mean_utility_cost_savings": 2.072867764432441,
+        "energy_consumption_savings": {
+          "electricity": -9.381849743697103,
+          "natural_gas": 45.91503427382577
+        },
+        "incremental_cost": 2206.0324008099997,
+        "like_for_like_cost": 0,
+        "measure_cost": 2206.0324008099997,
+        "measure_life": 20,
+        "net_present_value": -2174.116944916945,
+        "simple_payback": 1064.2417421229086,
+        "return_on_investment": 0,
+        "year_applied": 2027,
+        "internal_rate_of_return": -0.23497687820632207
+      },
+      {
+        "carbon_reduction_measure_type": "Reduce Air Infiltration with Traditional Weatherization",
+        "marginal_abatement_cost": 9900.890551027614,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.24650687945303926,
+            "skin_heating": 0,
+            "skin_cooling": 2.249289289974822,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 11.733104174051512,
+            "plug_load": 19.07610015601025,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.503824304365374,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 14.216935056654506,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.002484234120715,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 1.469076094096729,
+        "annual_mean_utility_cost_savings": -2.028032516174058,
+        "energy_consumption_savings": {
+          "electricity": -28.19678930884993,
+          "natural_gas": 13.29190403247776
+        },
+        "incremental_cost": 140.64000000000001,
+        "like_for_like_cost": 0,
+        "measure_cost": 140.64000000000001,
+        "measure_life": 10,
+        "net_present_value": -159.99677780661142,
+        "simple_payback": 140.64000000000001,
+        "return_on_investment": 0,
+        "year_applied": 2028
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.24650687945303926,
+            "skin_heating": 0,
+            "skin_cooling": 2.249289289974822,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 11.733104174051512,
+            "plug_load": 19.07610015601025,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.503824304365374,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 14.216935056654506,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 50.002484234120715,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2029
+      },
+      {
+        "carbon_reduction_measure_type": "Install Domestic Hot Water Ambient Air-Source Heat Pump",
+        "marginal_abatement_cost": -187.12192122583173,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0.24650687945303926,
+            "skin_heating": 0,
+            "skin_cooling": 2.249289289974822,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838786130677,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 11.733104174051512,
+            "plug_load": 19.07610015601025,
+            "process": 0,
+            "renewable": -0.46310129384633186
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 25.503824304365374,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 14.216935056654506,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 414.9522820817084,
+        "annual_mean_utility_cost_savings": 108.89548005214468,
+        "energy_consumption_savings": {
+          "electricity": -471.78801363828984,
+          "natural_gas": 2344.1164608955787
+        },
+        "incremental_cost": 144.6582857142857,
+        "like_for_like_cost": 56.256,
+        "measure_cost": 200.9142857142857,
+        "measure_life": 15,
+        "net_present_value": 1242.3466918427607,
+        "simple_payback": 1.3284140502894701,
+        "return_on_investment": 8.588147479478065,
+        "year_applied": 2030,
+        "internal_rate_of_return": 1.6637418733591893
+      },
+      {
+        "carbon_reduction_measure_type": "Install Heat-Only Air Source Heat Pump",
+        "marginal_abatement_cost": 342.4048295184408,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.514340390133053,
+            "outdoor_air_cooling": 0.24650687945303926,
+            "skin_heating": 3.0739319041415145,
+            "skin_cooling": 2.249289289974822,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838786130677,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 11.733104174051512,
+            "plug_load": 19.07610015601025,
+            "process": 0,
+            "renewable": -0.46310129384633186
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 328.7578954197985,
+        "annual_mean_utility_cost_savings": 90.10904440854603,
+        "energy_consumption_savings": {
+          "electricity": -402.61820515559157,
+          "natural_gas": 1862.1091988446121
+        },
+        "incremental_cost": 3600,
+        "like_for_like_cost": 0,
+        "measure_cost": 3600,
+        "measure_life": 25,
+        "net_present_value": -2251.3658226811503,
+        "simple_payback": 39.95159446678776,
+        "return_on_investment": 0,
+        "year_applied": 2031,
+        "internal_rate_of_return": -0.059575870651595086
+      },
+      {
+        "carbon_reduction_measure_type": "Install LED Lighting",
+        "marginal_abatement_cost": 15429.889680796085,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.25005549450286013,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.9477507197690638,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": -0.46310129384633186
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 3.561810258703515,
+        "annual_mean_utility_cost_savings": 10.358414962813082,
+        "energy_consumption_savings": {
+          "electricity": 101.766007391529,
+          "natural_gas": 0
+        },
+        "incremental_cost": 703.2,
+        "like_for_like_cost": 0,
+        "measure_cost": 703.2,
+        "measure_life": 10,
+        "net_present_value": -604.541732912953,
+        "simple_payback": 67.8868342815481,
+        "return_on_investment": 0,
+        "year_applied": 2032,
+        "internal_rate_of_return": -0.24928811184591726
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.25005549450286013,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.9477507197690638,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": -0.46310129384633186
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2033
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.25005549450286013,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.9477507197690638,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": -0.46310129384633186
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2034
+      },
+      {
+        "carbon_reduction_measure_type": "Replace Chiller with Oil-Free, Magnetic-Bearing Compressor Chiller",
+        "marginal_abatement_cost": 34638.25333046506,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0.4738504309559699,
+        "annual_mean_utility_cost_savings": 1.4227216515509369,
+        "energy_consumption_savings": {
+          "electricity": 13.83504907900624,
+          "natural_gas": 0
+        },
+        "incremental_cost": 281,
+        "like_for_like_cost": 1339,
+        "measure_cost": 1620,
+        "measure_life": 25,
+        "net_present_value": -262.61362029124683,
+        "simple_payback": 197.50876757493384,
+        "return_on_investment": 0,
+        "year_applied": 2035,
+        "internal_rate_of_return": -0.22371101570492025
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2036
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2037
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2038
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2039
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2040
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2041
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2042
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2043
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2044
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2045
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2046
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2047
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2048
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2049
+      },
+      {
+        "carbon_reduction_measure_type": "No Action",
+        "marginal_abatement_cost": 0,
+        "surrogate_energy_model_output": {
+          "energy_use_intensity_electricity": {
+            "outdoor_air_heating": 5.776967958837034,
+            "outdoor_air_cooling": 0.16378926329907623,
+            "skin_heating": 3.133476756960802,
+            "skin_cooling": 1.2757994225060765,
+            "ventilation": 0,
+            "domestic_hot_water": 10.526838785966513,
+            "pumps": 2.12,
+            "fans": 0.8,
+            "lighting": 10.480210337709048,
+            "plug_load": 18.134034917968464,
+            "process": 0,
+            "renewable": 0
+          },
+          "energy_use_intensity_natural_gas": {
+            "outdoor_air_heating": 0,
+            "outdoor_air_cooling": 0,
+            "skin_heating": 0,
+            "skin_cooling": 0,
+            "ventilation": 0,
+            "domestic_hot_water": 0,
+            "pumps": 0,
+            "fans": 0,
+            "lighting": 0,
+            "plug_load": 0,
+            "process": 0,
+            "renewable": 0
+          }
+        },
+        "annual_mean_carbon_emission_savings": 0,
+        "annual_mean_utility_cost_savings": 0,
+        "energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "incremental_cost": 0,
+        "like_for_like_cost": 0,
+        "measure_cost": 0,
+        "measure_life": 1,
+        "net_present_value": 0,
+        "simple_payback": 0,
+        "return_on_investment": 0,
+        "year_applied": 2050
+      }
+    ],
+    "yearly_summaries": [
+      {
+        "year": 2023,
+        "annual_carbon_emissions": 901.1754558182546,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.4166156317085894,
+        "annual_carbon_tax": 58.57640462818654,
+        "annual_energy_consumption_savings": {},
+        "annual_energy_consumption": {
+          "electricity": 1605.8470870425083,
+          "natural_gas": 4627.142370217048
+        },
+        "annual_utility_cost": 333.47219386673817,
+        "annual_utility_cost_savings": 0,
+        "utility_rates": {
+          "electricity": 0.096265,
+          "natural_gas": 0.03866
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.031,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2024,
+        "annual_carbon_emissions": 897.1393475614896,
+        "annual_carbon_emission_savings": 4.036108256765033,
+        "annual_carbon_offset_cost": 2.9320354749749185,
+        "annual_carbon_tax": 71.77114780491915,
+        "annual_energy_consumption_savings": {
+          "electricity": -9.542371655190209,
+          "natural_gas": 23.543053141716882
+        },
+        "annual_energy_consumption": {
+          "electricity": 1615.3894586976985,
+          "natural_gas": 4603.599317075331
+        },
+        "annual_utility_cost": 346.93770605308856,
+        "annual_utility_cost_savings": -13.465512186350395,
+        "utility_rates": {
+          "electricity": 0.09673,
+          "natural_gas": 0.04142
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.031,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2025,
+        "annual_carbon_emissions": 837.9803783401879,
+        "annual_carbon_emission_savings": 59.15896922130162,
+        "annual_carbon_offset_cost": 3.1006030867043934,
+        "annual_carbon_tax": 79.60813594231784,
+        "annual_energy_consumption_savings": {
+          "electricity": -45.25992566582818,
+          "natural_gas": 338.16671902883627
+        },
+        "annual_energy_consumption": {
+          "electricity": 1660.6493843635267,
+          "natural_gas": 4265.432598046495
+        },
+        "annual_utility_cost": 350.0113907864216,
+        "annual_utility_cost_savings": -3.073684733333039,
+        "utility_rates": {
+          "electricity": 0.09729,
+          "natural_gas": 0.04418
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.032,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2026,
+        "annual_carbon_emissions": 837.9803783401879,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 4.640164798456758,
+        "annual_carbon_tax": 92.17784161742065,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 1660.6493843635267,
+          "natural_gas": 4265.432598046495
+        },
+        "annual_utility_cost": 362.58109646152445,
+        "annual_utility_cost_savings": -12.569705675102853,
+        "utility_rates": {
+          "electricity": 0.09777,
+          "natural_gas": 0.046939999999999996
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.032,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2027,
+        "annual_carbon_emissions": 833.1722936938169,
+        "annual_carbon_emission_savings": 4.808084646371071,
+        "annual_carbon_offset_cost": 5.97890137559182,
+        "annual_carbon_tax": 104.14653671172711,
+        "annual_energy_consumption_savings": {
+          "electricity": -9.381849743697103,
+          "natural_gas": 45.91503427382577
+        },
+        "annual_energy_consumption": {
+          "electricity": 1670.0312341072238,
+          "natural_gas": 4219.517563772669
+        },
+        "annual_utility_cost": 374.2080994790632,
+        "annual_utility_cost_savings": -11.627003017538755,
+        "utility_rates": {
+          "electricity": 0.0985,
+          "natural_gas": 0.0497
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2028,
+        "annual_carbon_emissions": 831.6852741883417,
+        "annual_carbon_emission_savings": 1.487019505475132,
+        "annual_carbon_offset_cost": 7.336616754210769,
+        "annual_carbon_tax": 116.43593838636782,
+        "annual_energy_consumption_savings": {
+          "electricity": -28.19678930884993,
+          "natural_gas": 13.29190403247776
+        },
+        "annual_energy_consumption": {
+          "electricity": 1698.2280234160737,
+          "natural_gas": 4206.225659740191
+        },
+        "annual_utility_cost": 388.8001547083959,
+        "annual_utility_cost_savings": -14.592055229332686,
+        "utility_rates": {
+          "electricity": 0.09901,
+          "natural_gas": 0.05246
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2029,
+        "annual_carbon_emissions": 829.9870461649255,
+        "annual_carbon_emission_savings": 1.6982280234162772,
+        "annual_carbon_offset_cost": 8.632245681326934,
+        "annual_carbon_tax": 128.64799215556346,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 1698.2280234160737,
+          "natural_gas": 4206.225659740191
+        },
+        "annual_utility_cost": 401.0122084775915,
+        "annual_utility_cost_savings": -12.21205376919562,
+        "utility_rates": {
+          "electricity": 0.099365,
+          "natural_gas": 0.055220000000000005
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.033,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2030,
+        "annual_carbon_emissions": 414.23862181020263,
+        "annual_carbon_emission_savings": 415.74842435472283,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 70.42056570773444,
+        "annual_energy_consumption_savings": {
+          "electricity": -471.78801363828984,
+          "natural_gas": 2344.1164608955787
+        },
+        "annual_energy_consumption": {
+          "electricity": 2170.0160370543636,
+          "natural_gas": 1862.1091988446121
+        },
+        "annual_utility_cost": 324.6628928092594,
+        "annual_utility_cost_savings": 76.34931566833211,
+        "utility_rates": {
+          "electricity": 0.09986,
+          "natural_gas": 0.057980000000000004
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.033,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2031,
+        "annual_carbon_emissions": 90.04219847734844,
+        "annual_carbon_emission_savings": 324.1964233328542,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 15.892448031251998,
+        "annual_energy_consumption_savings": {
+          "electricity": -402.61820515559157,
+          "natural_gas": 1862.1091988446121
+        },
+        "annual_energy_consumption": {
+          "electricity": 2572.634242209955,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 258.36322535954025,
+        "annual_utility_cost_savings": 66.29966744971915,
+        "utility_rates": {
+          "electricity": 0.1004275,
+          "natural_gas": 0.059176
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2032,
+        "annual_carbon_emissions": 88.95125645346334,
+        "annual_carbon_emission_savings": 1.0909420238850913,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 16.278079930983793,
+        "annual_energy_consumption_savings": {
+          "electricity": 101.766007391529,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2470.868234818426,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 249.15741106262044,
+        "annual_utility_cost_savings": 9.205814296919812,
+        "utility_rates": {
+          "electricity": 0.100838,
+          "natural_gas": 0.060371999999999995
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.036,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2033,
+        "annual_carbon_emissions": 86.48038821864493,
+        "annual_carbon_emission_savings": 2.4708682348184112,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 16.388033567433215,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2470.868234818426,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 249.2673646990699,
+        "annual_utility_cost_savings": -0.1099536364494611,
+        "utility_rates": {
+          "electricity": 0.1008825,
+          "natural_gas": 0.061568000000000005
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2034,
+        "annual_carbon_emissions": 86.48038821864493,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 16.950156090854406,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2470.868234818426,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 249.82948722249108,
+        "annual_utility_cost_savings": -0.5621225234211806,
+        "utility_rates": {
+          "electricity": 0.10111,
+          "natural_gas": 0.062764
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2035,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0.48422671776523885,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 17.414222703928136,
+        "annual_energy_consumption_savings": {
+          "electricity": 13.83504907900624,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 248.98960045986846,
+        "annual_utility_cost_savings": 0.8398867626226263,
+        "utility_rates": {
+          "electricity": 0.1013375,
+          "natural_gas": 0.06396
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2036,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 17.973197753683856,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 249.54857550962416,
+        "annual_utility_cost_savings": -0.558975049755702,
+        "utility_rates": {
+          "electricity": 0.101565,
+          "natural_gas": 0.06515599999999999
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2037,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 18.532172803439575,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 250.1075505593799,
+        "annual_utility_cost_savings": -0.5589750497557304,
+        "utility_rates": {
+          "electricity": 0.10179250000000001,
+          "natural_gas": 0.066352
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2038,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 19.09114785319529,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 250.66652560913562,
+        "annual_utility_cost_savings": -0.5589750497557304,
+        "utility_rates": {
+          "electricity": 0.10202,
+          "natural_gas": 0.067548
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2039,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0,
+        "annual_carbon_tax": 19.65012290295101,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 251.22550065889135,
+        "annual_utility_cost_savings": -0.5589750497557304,
+        "utility_rates": {
+          "electricity": 0.1022475,
+          "natural_gas": 0.068744
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2040,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0.131431940677642,
+        "annual_carbon_tax": 20.20909795270673,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 251.78447570864702,
+        "annual_utility_cost_savings": -0.5589750497556736,
+        "utility_rates": {
+          "electricity": 0.102475,
+          "natural_gas": 0.06994
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2041,
+        "annual_carbon_emissions": 85.9961615008797,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 0.5503176034445916,
+        "annual_carbon_tax": 20.768073002462447,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 252.34345075840278,
+        "annual_utility_cost_savings": -0.5589750497557588,
+        "utility_rates": {
+          "electricity": 0.1027025,
+          "natural_gas": 0.071136
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.035,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2042,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 2.457033185739405,
+        "annual_carbon_offset_cost": 0.830694750257887,
+        "annual_carbon_tax": 20.71770382215479,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 252.2930815780951,
+        "annual_utility_cost_savings": 0.05036918030768334,
+        "utility_rates": {
+          "electricity": 0.102682,
+          "natural_gas": 0.07233200000000001
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2043,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.0892999212400174,
+        "annual_carbon_tax": 21.260708156203204,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 252.8360859121435,
+        "annual_utility_cost_savings": -0.5430043340483905,
+        "utility_rates": {
+          "electricity": 0.102903,
+          "natural_gas": 0.073528
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2044,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.2814434023555525,
+        "annual_carbon_tax": 21.803712490251613,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 253.37909024619194,
+        "annual_utility_cost_savings": -0.5430043340484474,
+        "utility_rates": {
+          "electricity": 0.103124,
+          "natural_gas": 0.07472400000000001
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2045,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.5178410353193055,
+        "annual_carbon_tax": 22.346716824300024,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 253.92209458024035,
+        "annual_utility_cost_savings": -0.543004334048419,
+        "utility_rates": {
+          "electricity": 0.103345,
+          "natural_gas": 0.07592
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2046,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.6594543212336026,
+        "annual_carbon_tax": 22.88972115834844,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 254.46509891428877,
+        "annual_utility_cost_savings": -0.543004334048419,
+        "utility_rates": {
+          "electricity": 0.103566,
+          "natural_gas": 0.07711599999999999
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2047,
+        "annual_carbon_emissions": 83.53912831514029,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.767353989648985,
+        "annual_carbon_tax": 23.432725492396848,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 255.0081032483372,
+        "annual_utility_cost_savings": -0.543004334048419,
+        "utility_rates": {
+          "electricity": 0.103787,
+          "natural_gas": 0.078312
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.034,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2048,
+        "annual_carbon_emissions": 81.08209512940086,
+        "annual_carbon_emission_savings": 2.4570331857394336,
+        "annual_carbon_offset_cost": 1.789045503385879,
+        "annual_carbon_tax": 23.270561302138045,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 254.84593905807841,
+        "annual_utility_cost_savings": 0.16216419025877826,
+        "utility_rates": {
+          "electricity": 0.10372100000000001,
+          "natural_gas": 0.079508
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.033,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2049,
+        "annual_carbon_emissions": 81.08209512940086,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.8522887094816958,
+        "annual_carbon_tax": 23.797594920479153,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 255.3729726764195,
+        "annual_utility_cost_savings": -0.5270336183410791,
+        "utility_rates": {
+          "electricity": 0.1039355,
+          "natural_gas": 0.080704
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.033,
+          "natural_gas": 0.184
+        }
+      },
+      {
+        "year": 2050,
+        "annual_carbon_emissions": 81.08209512940086,
+        "annual_carbon_emission_savings": 0,
+        "annual_carbon_offset_cost": 1.8580819802690984,
+        "annual_carbon_tax": 24.324628538820257,
+        "annual_energy_consumption_savings": {
+          "electricity": 0,
+          "natural_gas": 0
+        },
+        "annual_energy_consumption": {
+          "electricity": 2457.03318573942,
+          "natural_gas": 0
+        },
+        "annual_utility_cost": 255.9000062947606,
+        "annual_utility_cost_savings": -0.5270336183411075,
+        "utility_rates": {
+          "electricity": 0.10415,
+          "natural_gas": 0.0819
+        },
+        "utility_carbon_intensities": {
+          "electricity": 0.033,
+          "natural_gas": 0.184
+        }
+      }
+    ],
+    "total_carbon_emissions": 8081.7672130707115,
+    "total_carbon_emission_savings": 820.0933606888536,
+    "total_carbon_offset_cost": 48.36443596028844,
+    "total_carbon_tax": 1124.7753882522202,
+    "total_lifetime_carbon_emission_savings": 14159.581700860788,
+    "total_lifetime_utility_cost_savings": 3864.0706805346226,
+    "total_utility_cost": 7930.991382758308,
+    "total_utility_cost_savings": 77.57218757197757,
+    "total_incremental_cost": 8266.170686524285,
+    "total_like_for_like_cost": 1395.256,
+    "total_measure_cost": 9661.426686524286,
+    "total_return_on_investment": 0
+  },
+  "building_context": {
+    "building_asset_value": 331063.2784
+  },
+  "metadata": {
+    "building_uid": "00386486-8a1e-488c-a628-e25036e1f90e",
+    "mop_version": "v0.11.0",
+    "schema_version": "",
+    "time_created": "2023-03-08T14:35:35.829109",
+    "considered_crms": [],
+    "start_year": 2023,
+    "end_year": 2050
+  },
+  "raw_data": {
+    "base_energy_model_dataframe_csv": "",
+    "crpo_run_options": {
+      "CARBON_OFFSET_COST": 25,
+      "CARBON_SCENARIO": "CURRENT_POLICIES",
+      "HEURISTIC_CRITERIA_MODE": "cumulative",
+      "HEURISTIC_SCORING_MODE": "latest",
+      "NET_PRESENT_VALUE_DISCOUNT_RATE": 0.03,
+      "OUTPUT_DETAILED_ENERGY_DATA": false,
+      "PLANNING_SCENARIO": "decarbonize",
+      "UTILITY_INFLATION_RATE": 0,
+      "WEIGHT_ABATEMENT_COST": 0,
+      "WEIGHT_EMISSION_SAVING": 0.65,
+      "WEIGHT_NET_PRESENT_VALUE": 0.35,
+      "WEIGHT_PAYBACK_YEARS": 0
+    },
+    "reference_utility_rate": {},
+    "utility_rates_dataframe_csv": ""
+  }
+}
